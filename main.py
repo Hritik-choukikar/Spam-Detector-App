@@ -1,6 +1,6 @@
 import streamlit as st
 import pickle
-@st.cache
+
 def load_model():
     with open('./model/naivebayes_clf','rb') as f:
         model=pickle.load(f)
